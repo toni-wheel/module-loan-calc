@@ -1,0 +1,134 @@
+body {
+  background: linear-gradient(45deg, #f5f7fa, #c3cfe2);
+  background-attachment: fixed;
+}
+
+.loan-calc {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.loan-calc__container {
+  display: flex;
+  justify-content: center;
+}
+
+.loan-calc__form {
+  width: 100%;
+  max-width: 800px;
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.05);
+}
+
+.loan-calc__top {
+  width: 100%;
+  background: linear-gradient(45deg, #3d9b40, #25bf2a);
+  color: #fff;
+}
+
+.loan-calc__title {
+  padding-top: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
+  font-size: 25px;
+  margin-bottom: 25px;
+  font-weight: 500;
+}
+
+.loan-calc__fields {
+  display: flex;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 30px;
+}
+
+.loan-calc__input {
+  display: flex;
+  flex-direction: column;
+  flex: 1 0 auto;
+}
+
+.loan-calc__input label {
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+
+.loan-calc__input input {
+  width: 100%;
+  max-width: 200px;
+  background-color: #fff;
+  color: #111;
+  padding: 10px;
+  padding-left: 20px;
+  font-size: 20px;
+  border: none;
+}
+
+.loan-calc__bottom {
+  display: flex;
+}
+
+.loan-calc__chart {
+  flex: 0 0 400px;
+  padding-top: 30px;
+  padding-right: 30px;
+  padding-bottom: 50px;
+}
+
+.loan-calc__info {
+  flex: 1 0 auto;
+  padding-top: 30px;
+  padding-left: 30px;
+  padding-bottom: 50px;
+  padding-right: 50px;
+}
+
+.loan-calc__out {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #dadada;
+  padding-bottom: 10px;
+}
+
+.loan-calc__out > output::after {
+  content: "₽";
+  margin-left: 5px;
+}
+
+.loan-calc__out:nth-child(3) {
+  border-bottom: none;
+  margin-bottom: 30px;
+}
+
+.loan-calc__out span {
+  display: inline-block;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+.loan-calc__out output {
+  font-size: 25px;
+  letter-spacing: 1px;
+}
+
+.loan-calc__btn button {
+  display: block;
+  width: 100%;
+  max-width: 175px;
+  padding: 15px;
+  background: linear-gradient(45deg, #3d9b40, #25bf2a);
+  color: #fff;
+  border-radius: 10px;
+  text-align: center;
+  letter-spacing: 1px;
+  cursor: pointer;
+  user-select: none;
+  border: none;
+  font-size: 16px;
+  font-weight: 500;
+}
