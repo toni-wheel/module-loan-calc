@@ -10,12 +10,18 @@
     <title>Кредитный калькулятор с диаграммой</title>
   </head>
   <body>
+    <!-- Основной раздел с кредитным калькулятором -->
     <section class="loan-calc">
       <div class="container loan-calc__container">
+        <!-- Форма для ввода данных -->
         <form action="#!" class="loan-calc__form" id="loan-calc-form">
+          <!-- Верхняя часть формы -->
           <div class="loan-calc__top">
+            <!-- Заголовок калькулятора -->
             <h1 class="loan-calc__title">Рассчитайте платеж по кредиту</h1>
+            <!-- Поля ввода данных -->
             <div class="loan-calc__fields">
+              <!-- Поле ввода суммы кредита -->
               <div class="loan-calc__input">
                 <label for="loan-amount">Сумма (рубли)</label>
                 <input
@@ -27,6 +33,7 @@
                   max="1000000"
                 />
               </div>
+              <!-- Поле ввода процентной ставки -->
               <div class="loan-calc__input">
                 <label for="loan-precent">Процентная ставка</label>
                 <input
@@ -39,6 +46,7 @@
                   max="100"
                 />
               </div>
+              <!-- Поле ввода срока кредита -->
               <div class="loan-calc__input">
                 <label for="loan-term">Срок (в месяцах)</label>
                 <input
@@ -52,24 +60,31 @@
               </div>
             </div>
           </div>
+          <!-- Нижняя часть формы -->
           <div class="loan-calc__bottom">
+            <!-- Информационные блоки с результатами расчета -->
             <div class="loan-calc__info">
+              <!-- Блок с ежемесячным платежом -->
               <div class="loan-calc__out">
                 <span>Ежемесячный платеж</span>
                 <output id="loan-payment">100</output>
               </div>
+              <!-- Блок с суммой переплат -->
               <div class="loan-calc__out">
                 <span>Сумма переплат</span>
                 <output id="loan-over">10000</output>
               </div>
+              <!-- Блок с общей суммой выплаты по кредиту -->
               <div class="loan-calc__out">
                 <span>Общая сумма</span>
                 <output id="loan-total">10000</output>
               </div>
+              <!-- Кнопка для запуска расчета -->
               <div class="loan-calc__btn">
                 <button id="loan-btn">Рассчитать</button>
               </div>
             </div>
+            <!-- Блок для отображения графика -->
             <div class="loan-calc__chart">
               <canvas id="loan-chart"></canvas>
             </div>
@@ -77,7 +92,9 @@
         </form>
       </div>
     </section>
+    <!-- Подключение библиотеки Chart.js для отображения графиков -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- Подключение JavaScript файла с основным функционалом -->
     <script src="./js/script.js"></script>
   </body>
 </html>
